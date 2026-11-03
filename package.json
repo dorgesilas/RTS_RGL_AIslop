@@ -1,0 +1,12 @@
+{
+  "name": "veilwards-online-playtest",
+  "version": "4.2.1",
+  "private": true,
+  "description": "Veilwards browser RTS with four-player room-code co-op",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,13 @@
+# Optional one-click Blueprint deployment. Render also supports New > Web Service.
+services:
+  - type: web
+    name: veilwards-playtest
+    runtime: node
+    region: singapore
+    plan: free
+    buildCommand: npm install --omit=dev
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_ENV
+        value: production
